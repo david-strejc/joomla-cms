@@ -24,8 +24,8 @@ fi
 
 php ./vendor/composer.phar --no-ansi install
 
-npm install
+#npm install
 
-bower install -fq
+#bower install -fq
 
-grunt build
+#grunt build
