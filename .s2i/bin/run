@@ -6,8 +6,8 @@ cd ${APP_ROOT}
 
 export TERM=dumb
 
-#sed -i -- 's#'"${APP_ROOT}"/public'#'"${APP_ROOT}"/"${APP_PUBLIC_PATH}"'#g' /etc/nginx/nginx.conf
-#sed -i -- 's#'"${APP_ROOT}"/public'#'"${APP_ROOT}"/"${APP_PUBLIC_PATH}"'#g' /etc/php/php-fpm.conf
+sed -i -- 's#'"${APP_ROOT}"/public'#'"${APP_ROOT}"'#g' /etc/nginx/nginx.conf
+sed -i -- 's#'"${APP_ROOT}"/public'#'"${APP_ROOT}"'#g' /etc/php/php-fpm.conf
 
 php artisan migrate --force
 
